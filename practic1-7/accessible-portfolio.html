@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Портфолио дизайнера — доступная версия</title>
+
+  <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css">
+
+  <link rel="stylesheet" href="css/accessible-styles.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Перейти к контенту</a>
+
+<header class="header">
+  <div class="header-inner">
+    <img
+      src="img/logo.png"
+      alt="Логотип портфолио"
+      class="logo"
+    >
+
+    <nav class="nav" aria-label="Основная навигация">
+      <a href="#work">Работы</a>
+      <a href="#about">О себе</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="page">
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Алексей Прядко</h1>
+      <h2>UI / UX дизайнер</h2>
+      <p>
+        Создаю удобные и красивые интерфейсы для веб и мобильных приложений
+      </p>
+    </div>
+  </section>
+
+  <section id="work" class="work">
+    <h2>Портфолио</h2>
+
+    <div class="gallery">
+      <article class="card">
+        <h3>Проект 1</h3>
+        <p>Лендинг для стартапа</p>
+      </article>
+      <article class="card">
+        <h3>Проект 2</h3>
+        <p>Интерфейс мобильного приложения</p>
+      </article>
+      <article class="card">
+        <h3>Проект 3</h3>
+        <p>Корпоративный сайт</p>
+      </article>
+      <article class="card">
+        <h3>Проект 4</h3>
+        <p>Дизайн-система</p>
+      </article>
+      <article class="card">
+        <h3>Проект 5</h3>
+        <p>Интернет-магазин</p>
+      </article>
+      <article class="card">
+        <h3>Проект 6</h3>
+        <p>Редизайн сервиса</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <div class="about-text">
+      <h2>О себе</h2>
+      <p>
+        Я дизайнер с опытом более 7 лет. Работаю с веб-интерфейсами,
+        мобильными приложениями и дизайн-системами.
+      </p>
+    </div>
+
+    <div class="about-photo">
+      <img
+        src="img/photo.jpg"
+        alt="Фотография дизайнера"
+      >
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Обратная связь</h2>
+
+    <form action="#" novalidate>
+      <div class="form-field">
+        <label for="name">Имя *</label>
+        <input id="name" name="name" type="text" required>
+        <span class="error" aria-live="polite"></span>
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email *</label>
+        <input id="email" name="email" type="email" required>
+        <span class="error" aria-live="polite"></span>
+      </div>
+
+      <div class="form-field checkbox">
+        <input id="subscribe" name="subscribe" type="checkbox">
+        <label for="subscribe">Подписаться на рассылку</label>
+      </div>
+
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>
+    Email:
+    <a href="mailto:designer@mail.com">designer@mail.com</a>
+  </p>
+  <p>Telegram · Behance · Dribbble</p>
+</footer>
+
+</body>
+</html>
